@@ -1,0 +1,260 @@
+
+.hero {
+     position: relative;
+    width: 100vw;
+    height: 100vh;
+    display: flex;
+    justify-content: left;
+    align-items: center;
+      text-align: center;
+}
+.hero::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100vw;
+    height: 100vh;
+    background: url(https://assets.materialup.com/uploads/db1626d6-d491-4a7f-be0a-c17162170731/preview.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+.hero-content {
+    position: relative; 
+    font-family: "Monserrat", sans-serif;
+    color: white;
+    text-align: left;
+    width: 800px;
+    margin: 40px;
+}
+      .hero-title {
+      
+    font-size: 3rem;
+    font-weight: 600;
+    margin-bottom: 0;
+}
+.hero-subtitle {
+    font-size: 2rem;
+    font-weight: 200;
+    margin-top: 1rem;
+}
+      .hero-button {
+    background-color:#233142;
+    color: black;
+    margin-top: 5rem;
+    padding: 0.9375rem 1.875rem;
+    font-family: "Monserrat", sans-serif;
+    font-size: 1.125rem;
+    font-weight: 200;
+    cursor: pointer;
+      border-radius: 12px;
+}
+.hero-button:hover {
+    background-color: #cb376a;
+    border: 1px solid #db7598;
+}
+      .container {
+    background-color: #332020;
+    color: #000;
+    font: normal 15px "Helvetica Neue", Arial, Helvetica, Geneva, sans-serif;
+}
+  p {
+    line-height: 20px;
+    margin-bottom: 20px;
+}
+h6 {
+    font-family: 'Crete Round', serif;
+    font-weight: bold;
+    color: #444;
+    font-size: 45px;
+    margin-bottom: 20px;
+}
+h7 {
+    font-weight: 300;
+    color: #444;
+    font-size: 55px;
+    text-transform: uppercase;
+    text-align: center;
+    margin-bottom: 20px;
+}
+h3 {
+    font-size: 30px;
+    color: #444;
+    font-weight: bold;
+    text-transform: uppercase;
+    text-align: center;
+    margin-bottom: 20px;
+}
+h4 {
+    font-size: 24px;
+    color: #444;
+    font-weight: bold;
+    text-transform: uppercase;
+    margin-bottom: 20px;
+}
+h5 {
+    font-size: 15px;
+    color: #444;
+    font-weight: bold;
+    text-transform: uppercase;
+}
+a {
+    text-decoration: none;
+    color: #444;
+}
+a:hover {
+    color: #02b8dd;
+}
+strong {
+    font-weight: bold;
+}
+small {
+    font-size: 13px;
+    color: #777;
+    font-style: italic;
+}
+.clear {
+    clear: both;
+}
+.wrapper {
+    margin: 0 auto;
+    padding: 0 10px;
+    width: 1040px;
+}
+      .features ul {
+    margin: 80px 0;
+      list-style:none;
+}
+.features ul li {
+    width: 300px;
+      height: 250px;
+    padding-top: 140px;
+    float: left;
+    margin-right: 10px;
+    text-align: center;
+      border-radius: 16px;
+}
+.features ul li.feature-1 {
+    background: url('https://images.hdqwalls.com/wallpapers/scifi-robot-police-4k-9d.jpg') no-repeat top center;
+    background-size: cover;
+}
+.features ul li.feature-2 {
+    background: url(https://cdnb.artstation.com/p/assets/images/images/022/877/151/large/leonardo-severini-pose.jpg?1577053252) no-repeat top center;
+    background-size: cover;
+}
+.features ul li.feature-3 {
+    background: url(https://wallpaperaccess.com/full/1581952.png) no-repeat top center;
+    background-size: cover;
+}
+      .primary-content {
+    background-color: #f8fafa;
+    padding: 60px 0;
+    text-align: center;
+}
+  .imgr {
+    border: 0;
+    width: 1056px;
+    height: auto;
+    border-radius: 18px;
+}
+.primary-content h3 {
+    display: block;
+    margin: 0 auto 20px auto;
+    width: 400px;
+    border-bottom: 1px solid #02b8dd;
+    padding: 0 0 20px 0;
+}
+.primary-content a img {
+    margin: 20px 0;
+}
+
+article h4 {
+    border-bottom: 1px solid #02b8dd;
+    padding-bottom: 20px;
+}
+.more-link {
+    border: 1px solid #02b8dd;
+    color: #02b8dd;
+    padding: 6px 20px;
+    border-radius: 3px;
+}
+.more-link:hover {
+    background-color: #02b8dd;
+    color: #fff;
+}
+      footer {
+    padding: 60px 0;
+    background-color: #f8fafa;
+}
+.footer-info {
+    width: 380px;
+    float: left;
+    margin-top: 10px;
+}
+.footer-links {
+    width: 520px;
+    float: right;
+}
+.footer-links ul {
+    width: 150px;
+    float: center;
+    margin-left: 20px;
+}
+.footer-links ul li {
+    margin: 10px 0;
+}
+      .cta {
+    padding: 60px 0;
+    text-align: center;
+}
+.cta h3 {
+    display: block;
+    margin: 0 auto 20px auto;
+    width: 400px;
+    border-bottom: 1px solid #02b8dd;
+    padding: 0 0 20px 0;
+}
+.button-2 {
+    display: block;
+    margin: 0 auto;
+    border: 2px solid #02b8dd;
+    color: #02b8dd;
+    border-radius: 3px;
+    width: 180px;
+    height: 50px;
+    font-size: 20px;
+    line-height: 50px;
+}
+.button-2:hover {
+    background-color: #02b8dd;
+    color: #fff;
+}
+  
+      
+      .containerfooter {
+  padding: 20px;
+  background-color: #000000;
+}
+
+input[type=text], input[type=submit] {
+  width: 100%;
+  padding: 12px;
+  margin: 8px 0;
+  display: inline-block;
+  border: 1px solid #ccc;
+  box-sizing: border-box;
+}
+
+input[type=checkbox] {
+  margin-top: 16px;
+}
+
+input[type=submit] {
+  background-color: #04AA6D;
+  color: white;
+  border: none;
+}
+
+input[type=submit]:hover {
+  opacity: 0.8;
+}
