@@ -1,63 +1,110 @@
+.header {
+  position: relative;
+  color: #fff;
+  z-index: 999;
+  width: 100%;
+  top:1em;
+}
 
+.logo {
+  width: 390px;
+  display: inline-block;
+  
+}
+.menu {
+  display: inline-block;
+  
+}
+.menu:hover {
+  color: #405a50;
+}
+.menu-text {
+  color: #312f2f;
+  opacity: 0.4;
+}
+
+.header .logo {
+  margin-left: 3em;
+}
+
+.header .menu {
+  float: right;
+  margin-right: 3.7em;
+  line-height: 2;
+}
 .hero {
      position: relative;
     width: 100vw;
     height: 100vh;
     display: flex;
-    justify-content: left;
+    justify-content: center;
     align-items: center;
       text-align: center;
 }
-.hero::before {
-    content: "";
-    position: absolute;
-    top: 0;
-    left: 0;
-    width: 100vw;
-    height: 100vh;
-    background: url(https://assets.materialup.com/uploads/db1626d6-d491-4a7f-be0a-c17162170731/preview.jpg);
+.background {
+    background: url(https://images.hdqwalls.com/wallpapers/landscape-trees-mountains-clouds-digital-art-38.jpg);
     background-repeat: no-repeat;
     background-size: cover;
+    background-position: bottom center;
+    /*filter: brightness(0.8);*/
+
+ 
 }
 .hero-content {
+  
     position: relative; 
     font-family: "Monserrat", sans-serif;
     color: white;
-    text-align: left;
+    text-align: center;
     width: 800px;
-    margin: 40px;
+    margin: 60px;
+    padding-bottom: 100px;
 }
       .hero-title {
       
-    font-size: 3rem;
+    font-size: 5rem;
     font-weight: 600;
     margin-bottom: 0;
+    backdrop-filter: brightness(99%) saturate(90%);
+}
+
+.gradient-text {
+  font-family: 'Crete Round', serif;
+    font-size: 1.6rem;
+    color: #000;
+   border-bottom: #02b8dd;
+   backdrop-filter: blur(10px) saturate(90px);
+  padding: 9px;
+  border-radius: 24px;
+ 
 }
 .hero-subtitle {
     font-size: 2rem;
     font-weight: 200;
     margin-top: 1rem;
 }
-      .hero-button {
-    background-color:#233142;
-    color: black;
-    margin-top: 5rem;
-    padding: 0.9375rem 1.875rem;
-    font-family: "Monserrat", sans-serif;
-    font-size: 1.125rem;
-    font-weight: 200;
-    cursor: pointer;
-      border-radius: 12px;
+.herobutton {
+ 
+    border: 0px solid ;
+    color: #643131;
+    border-radius: 10px;
+    width: 170px;
+    height: 50px;
+    font-size: 20px;
+    margin-top: 20px;
+   
+    background-color: #f7f4f4;
+    backdrop-filter: blur(16px) saturate(90px);
+    margin: 7px;
+
 }
-.hero-button:hover {
-    background-color: #cb376a;
-    border: 1px solid #db7598;
+.herobutton:hover {
+  
+    color: #9e7832;
+    background-color: #e7e2e2;
+    
 }
-      .container {
-    background-color: #332020;
-    color: #000;
-    font: normal 15px "Helvetica Neue", Arial, Helvetica, Geneva, sans-serif;
-}
+
   p {
     line-height: 20px;
     margin-bottom: 20px;
@@ -87,7 +134,7 @@ h3 {
 }
 h4 {
     font-size: 24px;
-    color: #444;
+    color: #000000;
     font-weight: bold;
     text-transform: uppercase;
     margin-bottom: 20px;
@@ -113,48 +160,59 @@ small {
     color: #777;
     font-style: italic;
 }
-.clear {
-    clear: both;
-}
+
 .wrapper {
+  
     margin: 0 auto;
     padding: 0 10px;
     width: 1040px;
 }
-      .features ul {
-    margin: 80px 0;
-      list-style:none;
-}
-.features ul li {
-    width: 300px;
-      height: 250px;
-    padding-top: 140px;
-    float: left;
-    margin-right: 10px;
-    text-align: center;
-      border-radius: 16px;
-}
-.features ul li.feature-1 {
-    background: url('https://images.hdqwalls.com/wallpapers/scifi-robot-police-4k-9d.jpg') no-repeat top center;
-    background-size: cover;
-}
-.features ul li.feature-2 {
-    background: url(https://cdnb.artstation.com/p/assets/images/images/022/877/151/large/leonardo-severini-pose.jpg?1577053252) no-repeat top center;
-    background-size: cover;
-}
-.features ul li.feature-3 {
-    background: url(https://wallpaperaccess.com/full/1581952.png) no-repeat top center;
-    background-size: cover;
-}
+ 
+
       .primary-content {
-    background-color: #f8fafa;
+    background-color: #03030b;
+    color: #02b8dd;
     padding: 60px 0;
     text-align: center;
 }
-  .imgr {
-    border: 0;
-    width: 1056px;
-    height: auto;
+
+    .third-content {
+    background: linear-gradient(to bottom, #03030b, white, white);
+    color: #000;
+    padding: 60px 0;
+    text-align: center;
+}
+
+.roundedborder{
+ border: 20px solid;
+ border: double 1em transparent;
+  border-radius: 30px;
+  background-image: linear-gradient(to left, black, blue, black), 
+                    linear-gradient(to bottom, white,black,  black);
+  background-origin: border-box;
+  background-clip: content-box, border-box;
+  
+}
+.roundedborderthird{
+ border: 30px solid;
+ border: double 1em transparent;
+  border-radius: 30px;
+  background-image: linear-gradient(white, black), 
+                    linear-gradient(to bottom, white, gray, black);
+  background-origin: border-box;
+  background-clip: content-box, border-box;
+}
+
+.content-title h3 {
+  border-bottom: #3b3e3f;
+  color: #000;
+}
+  .content-image {
+    
+    width: auto;
+    height: 500px;
+    border: 10px;
+
     border-radius: 18px;
 }
 .primary-content h3 {
@@ -167,14 +225,26 @@ small {
 .primary-content a img {
     margin: 20px 0;
 }
+.grid {
+   display: flex;
+  align-items: center;
+  justify-content: center;
 
+}
+.info-content h3{
+  font-size: 29px;
+  
+}
+.info-content {
+  margin: 20px;
+}
 article h4 {
-    border-bottom: 1px solid #02b8dd;
+    border-bottom: 1px solid #222d30;
     padding-bottom: 20px;
 }
 .more-link {
     border: 1px solid #02b8dd;
-    color: #02b8dd;
+    color: #202627;
     padding: 6px 20px;
     border-radius: 3px;
 }
@@ -182,30 +252,11 @@ article h4 {
     background-color: #02b8dd;
     color: #fff;
 }
-      footer {
-    padding: 60px 0;
-    background-color: #f8fafa;
-}
-.footer-info {
-    width: 380px;
-    float: left;
-    margin-top: 10px;
-}
-.footer-links {
-    width: 520px;
-    float: right;
-}
-.footer-links ul {
-    width: 150px;
-    float: center;
-    margin-left: 20px;
-}
-.footer-links ul li {
-    margin: 10px 0;
-}
-      .cta {
+ .cta {
+    font-size: 16px;
     padding: 60px 0;
     text-align: center;
+  
 }
 .cta h3 {
     display: block;
@@ -213,6 +264,41 @@ article h4 {
     width: 400px;
     border-bottom: 1px solid #02b8dd;
     padding: 0 0 20px 0;
+    background: -webkit-linear-gradient(#f7f4f4,  #424030,#197397);
+     -webkit-background-clip: text;
+   -webkit-text-fill-color: transparent;
+}
+.cta h4 {
+    display: block;
+    margin: 0 auto 20px auto;
+    width: 400px;
+    border-bottom: 1px solid #02b8dd;
+    padding: 0 0 20px 0;
+    background: -webkit-linear-gradient(#f7f4f4,  #424030,#197397);
+     -webkit-background-clip: text;
+   -webkit-text-fill-color: transparent;
+}
+
+
+.ctba h3 {
+    display: block;
+    margin: 0 auto 20px auto;
+    width: 300px;
+    border-bottom: 1px solid #02b8dd;
+    padding: 0 0 20px 0;
+    background: -webkit-linear-gradient(#f7f4f4, white, #f5ca0d,#030303);
+     -webkit-background-clip: text;
+   -webkit-text-fill-color: transparent;
+}
+.ctba h4 {
+    display: block;
+    margin: 0 auto 20px auto;
+    width: 300px;
+    border-bottom: 1px solid #000000;
+    padding: 0 0 20px 0;
+    background: -webkit-linear-gradient(#f7f4f4, white, #f5ca0d,#030303);
+     -webkit-background-clip: text;
+   -webkit-text-fill-color: transparent;
 }
 .button-2 {
     display: block;
@@ -225,36 +311,15 @@ article h4 {
     font-size: 20px;
     line-height: 50px;
 }
+
 .button-2:hover {
-    background-color: #02b8dd;
-    color: #fff;
+    background-color: #095564;
+    color: #991f1f;
 }
   
       
-      .containerfooter {
+      .first-first-first-containerfooter {
   padding: 20px;
-  background-color: #000000;
+  background-color: #03030b;
 }
 
-input[type=text], input[type=submit] {
-  width: 100%;
-  padding: 12px;
-  margin: 8px 0;
-  display: inline-block;
-  border: 1px solid #ccc;
-  box-sizing: border-box;
-}
-
-input[type=checkbox] {
-  margin-top: 16px;
-}
-
-input[type=submit] {
-  background-color: #04AA6D;
-  color: white;
-  border: none;
-}
-
-input[type=submit]:hover {
-  opacity: 0.8;
-}
